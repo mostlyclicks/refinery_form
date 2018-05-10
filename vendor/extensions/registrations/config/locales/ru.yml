@@ -1,0 +1,87 @@
+ru:
+  refinery:
+    plugins:
+      registrations:
+        title: Registrations
+    registrations:
+      registrations:
+        new:
+          header_message: "Упс. Возникла небольшая проблемка."
+          message: "Нужно исправить следующие ошибки:"
+          send: "Отправить сообщение"
+          privacy_policy: "Мы относимся с уважением к вашим личным данным"
+      admin:
+        registrations:
+          registration:
+            read_registration: "Прочитать запрос"
+            delete_registration: "Вы уверены, что хотите удалить запрос от '%{name}'?"
+            said: "пишет"
+            mark_as_spam: "Пометить как спам"
+            mark_as_ham: "Переместить во Входящие"
+          submenu:
+            inbox: "Входящие"
+            spam: "Спам"
+            update_notified: Изменить получателей уведомлений
+            edit_confirmation_email: "Редактировать письмо-подтверждение"
+          index:
+            no_registrations: "Вы еще не получили ни одного запроса."
+          spam:
+            no_spam: "Ура! Вы не получили спам."
+          show:
+            details: "Подробности"
+            click_to_email: "Нажмите, чтобы отправить"
+            status: "Статус"
+            open: "Открыт"
+            closed: "Закрыт"
+            age: "Срок"
+            actions: "Действия"
+            back_to_all_registrations: "Назад ко всем запросам"
+            spam: "Спам"
+            spam_yes: 'да'
+            registration: Registration
+            title: Registrations
+        settings:
+          update:
+            updated: "'%{setting}' были успешно обновлены."
+          notification_recipients_form:
+            registration_settings_value_name: "Отправить уведомления"
+            explanation: "Каждый раз, когда кто-то связывается с вами посредством вашего сайта, Refinery CMS отправляет уведомление на электронную почту."
+            hint: "Когда поступит новый запрос, Refinery CMS отправит вам уведомление на электронную почту."
+            example: "Введите адрес(а) электронной почты через запятую: anna@mail.ru, ivanov@yandex.ru"
+          confirmation_email_form:
+            to: "Кому"
+            from: "От"
+            subject: "Тема сообщения"
+            click_to_edit_subject: "Редактировать тему сообщения"
+            explanation: "Каждый раз, когда кто-то связывается с вами посредством вашего сайта, Refinery CMS отправляет ему письмо, подтверждающее принятие запроса."
+            below_edit_email_sent: Ниже вы можете отредактировать отсылаемое письмо
+            the_customer_making_registration: "Клиент, делающий запрос"
+            message: "Сообщение"
+            note: "Примечание: поместите текст %name% там, где вы хотите, чтобы появилось имя клиента."
+          subject_form:
+            subject_value_name: "Тема сообщения"
+  activerecord:
+    models:
+      registration: Registration
+      setting: "Настройки запроса"
+    attributes:
+      registration:
+        full_name: Full name
+        email_address: Email address
+        phone_number: Phone number
+        ussa_number: Ussa number
+        fis_number: Fis number
+        street_address: Street address
+        city: City
+        state: State
+        zip: Zip
+        athlete_previous_sponsorship_level: Athlete previous sponsorship level
+        athlete_previous_sponsorship_brand: Athlete previous sponsorship brand
+        athlete_previous_sponsorship_brand_other: Athlete previous sponsorship brand other
+        athlete_team_club_name: Athlete team club name
+        athlete_age_group: Athlete age group
+        athlete_coach_name: Athlete coach name
+        athlete_preferred_race_center: Athlete preferred race center
+        coach_team_club_name: Coach team club name
+        coach_position: Coach position
+        coach_preferred_race_center: Coach preferred race center

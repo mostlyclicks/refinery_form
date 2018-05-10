@@ -1,0 +1,93 @@
+lv:
+  refinery:
+    plugins:
+      registrations:
+        title: Registrations
+    registrations:
+      registrations:
+        new:
+          send: Sūtīt ziņu
+          privacy_policy: Mēs cienam Jūsu privātumu
+      admin:
+        registrations:
+          registration:
+            delete_registration: Dzēst šo pieprasījumu
+            read_registration: Lasīt pieprasījumu
+            said: sacīja
+            mark_as_spam: Atzīmēt kā spamu
+            mark_as_ham: Pārvietot uz ienākošajiem
+          submenu:
+            inbox: Ienākošie
+            spam: Spams
+            update_notified: Atjaunot paziņojumu saņēmēju
+            edit_confirmation_email: Labot apstiprinājuma epastu
+          index:
+            no_registrations: Nav saņemts neviens pieprasījums.
+          spam:
+            no_spam: Urā! Jums nav neviens pieprasījums, kas būtu spams.
+          show:
+            details: Detaļas
+            age: Vecums
+            actions: Darbības
+            back_to_all_registrations: Atgriezties pie visiem pieprasījumiem
+            spam: Spams
+            spam_yes: jā
+            registration: Registration
+            to: Kam
+            from: 'No'
+            click_to_email: Click to email this address
+            phone: Tālrunis
+            date: Datums
+            message: Ziņa
+        settings:
+          notification_recipients_form:
+            registration_settings_value_name: Sūtīt paziņojumu uz
+            explanation: Katru reizi, kad kāds ar tevi sazinās izmantojot kontaktformu, Refinery nosūta epastu par to, ka ir jauns pieprasījums.
+            hint: Kad tiek iesniegts jauns pieprasījums, tad Refinery nosūtīs paziņojumu uz šo epastu.
+            example: "Ievadi savu epasta(-u) adresi(-es) šādā formātā: janis.ozols@test.lv, juris@test.lv"
+          confirmation_email_form:
+            to: Saņēmējs
+            from: Adresāts
+            subject: Tēma
+            click_to_edit_subject: Spied šeit, lai labotu tēmu
+            explanation: Katru reizi, kad kāds sazinās ar tevi izmantojot kontakformu Refinery nosūta apstiprinājuma epastu personai, kura iesniegusi pieprasījumu.
+            below_edit_email_sent: Zemāk vari labot epasta saturu, kas tiek izsūtīts.
+            the_customer_making_registration: Klients, kurš izveidoja pieprasījumu
+            message: Ziņa
+            note: "Piezīme: ievieto šo tektstu %name% tur, kur tu epastā vēlies norādīt klienta vārdu"
+      mailer:
+        notification:
+          greeting: Sveicināts(-a)
+          you_recieved_new_registration: Jūs nupat saņēmāt jaunu piperasījumu Jūsu saitā.
+          registration_starts: --- pieprasījuma sākums ---
+          registration_ends: --- pieprasījuma beigas ---
+          from: 'No'
+          email: Epasts
+          phone: Tālrunis
+          message: Ziņa
+          closing_line: Ar cieņu
+          ps_html: P.S. Ja vēlaties skatīt šo un citus pieprasījumus vēlāk, tad tos var atrast zem sadaļas "Pieprasījumi".
+  activerecord:
+    models:
+      registration: Registration
+    attributes:
+      registration:
+        full_name: Full name
+        email_address: Email address
+        phone_number: Phone number
+        ussa_number: Ussa number
+        fis_number: Fis number
+        street_address: Street address
+        city: City
+        state: State
+        zip: Zip
+        athlete_previous_sponsorship_level: Athlete previous sponsorship level
+        athlete_previous_sponsorship_brand: Athlete previous sponsorship brand
+        athlete_previous_sponsorship_brand_other: Athlete previous sponsorship brand other
+        athlete_team_club_name: Athlete team club name
+        athlete_age_group: Athlete age group
+        athlete_coach_name: Athlete coach name
+        athlete_preferred_race_center: Athlete preferred race center
+        coach_team_club_name: Coach team club name
+        coach_position: Coach position
+        coach_preferred_race_center: Coach preferred race center

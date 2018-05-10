@@ -1,0 +1,216 @@
+<div id='records'>
+  <h2><%= t('.registration') %></h2>
+  <table id='registration' class='registration'>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.full_name', :default => t('activerecord.attributes.registration.full_name')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @registration.full_name %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.email_address', :default => t('activerecord.attributes.registration.email_address')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @registration.email_address %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.phone_number', :default => t('activerecord.attributes.registration.phone_number')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @registration.phone_number %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.ussa_number', :default => t('activerecord.attributes.registration.ussa_number')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @registration.ussa_number %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.fis_number', :default => t('activerecord.attributes.registration.fis_number')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @registration.fis_number %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.street_address', :default => t('activerecord.attributes.registration.street_address')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @registration.street_address %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.city', :default => t('activerecord.attributes.registration.city')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @registration.city %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.state', :default => t('activerecord.attributes.registration.state')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @registration.state %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.zip', :default => t('activerecord.attributes.registration.zip')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @registration.zip %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.athlete_previous_sponsorship_level', :default => t('activerecord.attributes.registration.athlete_previous_sponsorship_level')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @registration.athlete_previous_sponsorship_level %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.athlete_previous_sponsorship_brand', :default => t('activerecord.attributes.registration.athlete_previous_sponsorship_brand')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @registration.athlete_previous_sponsorship_brand %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.athlete_previous_sponsorship_brand_other', :default => t('activerecord.attributes.registration.athlete_previous_sponsorship_brand_other')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @registration.athlete_previous_sponsorship_brand_other %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.athlete_team_club_name', :default => t('activerecord.attributes.registration.athlete_team_club_name')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @registration.athlete_team_club_name %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.athlete_age_group', :default => t('activerecord.attributes.registration.athlete_age_group')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @registration.athlete_age_group %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.athlete_coach_name', :default => t('activerecord.attributes.registration.athlete_coach_name')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @registration.athlete_coach_name %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.athlete_preferred_race_center', :default => t('activerecord.attributes.registration.athlete_preferred_race_center')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @registration.athlete_preferred_race_center %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.coach_team_club_name', :default => t('activerecord.attributes.registration.coach_team_club_name')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @registration.coach_team_club_name %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.coach_position', :default => t('activerecord.attributes.registration.coach_position')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @registration.coach_position %>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>
+            <%= t('.coach_preferred_race_center', :default => t('activerecord.attributes.registration.coach_preferred_race_center')) %>
+          </strong>
+        </td>
+        <td>
+          <%= @registration.coach_preferred_race_center %>
+        </td>
+      </tr>
+  </table>
+</div>
+<div id='actions'>
+  <h2><%= t('.details')%></h2>
+  <p>
+    <strong><%= t('.age') %>:</strong> <%= time_ago_in_words(@registration.created_at) %>
+  </p>
+  <h2><%= t('.actions') %></h2>
+  <ul>
+    <li>
+    <%= link_to t('.back_to_all_registrations'), refinery.registrations_admin_registrations_path,
+                   :class => "back_icon" %>
+    </li>
+    <li>
+      <%= link_to t('delete_registration', :scope => 'refinery.registrations.admin.registrations.registration'),
+                  refinery.registrations_admin_registration_path(@registration),
+                  :class => 'delete_icon no-tooltip confirm-delete',
+                  :title => t('delete_registration', :scope => 'refinery.registrations.admin.registrations.registration'),
+                  :'data-confirm' => t('message', :scope => 'refinery.admin.delete', :title => @registration.name),
+                  :'data-method' => "delete" %>
+    </li>
+  </ul>
+</div>

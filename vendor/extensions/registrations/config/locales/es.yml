@@ -1,0 +1,76 @@
+es:
+  refinery:
+    plugins:
+      registrations:
+        title: Registrations
+    registrations:
+      registrations:
+        new:
+          header_message: "Mil disculpas hay un pequeño problema."
+          message: "Los siguientes problemas necesitan ser corregidos:"
+          send: Enviar mensaje
+          privacy_policy: "Nosotros valoramos tu privacidad"
+      admin:
+        registrations:
+          registration:
+            read_registration: Leer esta consulta
+            delete_registration: "Estas seguro que quieres borrar esta consulta de '%{name}'?"
+          index:
+            no_registrations: No has recibido ninguna consulta aun.
+          show:
+            details: Detalles
+            click_to_email: Click al email
+            status: Estatus
+            open: Abierto
+            closed: Cerrado
+            age: Edad
+            actions: Acciones
+            back_to_all_registrations: Regresar a todas las consultas
+            registration: Registration
+          submenu:
+            update_notified: "Actualizar a quien será notificado"
+            edit_confirmation_email: "Editar email de confirmación"
+        settings:
+          update:
+            updated: "'%{setting}' fue actualizado exitosamente."
+          notification_recipients_form:
+            registration_settings_value_name: Mandar notificaciones a
+            explanation: "Cada vez que alguien se comunique con usted en su sitio web, Refinery enviara un correo electrónico respecto a esta nueva consulta."
+            hint: "Ingrese una dirección de correo. Ingrese la dirección de correo de las persona que vaya a ser notificada, si quiere que varias personas sean notificadas ingrese las direcciones de correo separadas por comas."
+            example: "Ejemplo: me@domain.com, friend@msn.com, workmate@work.com"
+          confirmation_email_form:
+            to: Para
+            from: De
+            subject: Asunto
+            click_to_edit_subject: Click aqui para modificar el asunto
+            explanation: "Cada vez que alguien se comunique con usted en su sitio web, Refinery enviara un correo electrónico respecto a esta nueva consulta."
+            below_edit_email_sent: "Abajo usted puede editar el email a donde la consulta será enviado."
+            the_customer_making_registration: El cliente haciendo la consulta
+            message: Mensaje
+            note: "Nota: ingrese el texto %name% donde quiera que el nombre del cliente aparezca en el email"
+          subject_form:
+            subject_value_name: Asunto
+  activerecord:
+    models:
+      registration: Registration
+    attributes:
+      registration:
+        full_name: Full name
+        email_address: Email address
+        phone_number: Phone number
+        ussa_number: Ussa number
+        fis_number: Fis number
+        street_address: Street address
+        city: City
+        state: State
+        zip: Zip
+        athlete_previous_sponsorship_level: Athlete previous sponsorship level
+        athlete_previous_sponsorship_brand: Athlete previous sponsorship brand
+        athlete_previous_sponsorship_brand_other: Athlete previous sponsorship brand other
+        athlete_team_club_name: Athlete team club name
+        athlete_age_group: Athlete age group
+        athlete_coach_name: Athlete coach name
+        athlete_preferred_race_center: Athlete preferred race center
+        coach_team_club_name: Coach team club name
+        coach_position: Coach position
+        coach_preferred_race_center: Coach preferred race center

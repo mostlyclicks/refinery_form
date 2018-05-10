@@ -69,3 +69,5 @@ gem 'refinerycms-authentication-devise', '~> 2.0.0'
 
 gem 'refinerycms-forms', git: 'https://github.com/refinery/refinerycms-forms', branch: 'master', group: :development
 
+
+gem 'refinerycms-registrations', path: 'vendor/extensions'

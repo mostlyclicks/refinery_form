@@ -1,0 +1,94 @@
+fr:
+  refinery:
+    plugins:
+      registrations:
+        title: Registrations
+        description: Fournit un formulaire de contact et gère les demandes de contacts.
+    registrations:
+      registrations:
+        new:
+          send: Envoyer un message
+          privacy_policy: Nous respectons votre vie privée
+      admin:
+        registrations:
+          registration:
+            delete_registration: Supprimer définitivement cette requête
+            read_registration: Lire la requête
+            said: a dit
+            mark_as_spam: Marquer comme spam
+            mark_as_ham: Déplacer dans la boîte de réception
+          submenu:
+            inbox: Boîte de réception
+            spam: Spam
+            update_notified: Choisir qui reçoit les notifications
+            edit_confirmation_email: Modifier l'e-mail de confirmation
+          index:
+            no_registrations: Vous n'avez reçu aucune requête.
+          spam:
+            no_spam: Vous n'avez aucun spam.
+          show:
+            details: Détails
+            age: Age
+            actions: Actions
+            back_to_all_registrations: Retourner à la liste des requêtes
+            spam: Spam
+            spam_yes: 'oui'
+            registration: Registration
+            to: À
+            from: De
+            click_to_email: Cliquer ici pour enyoyer un e-mail à cette adresse
+            phone: Téléphone
+            date: Date
+            message: Message
+        settings:
+          notification_recipients_form:
+            registration_settings_value_name: Envoyer une notification à
+            explanation: Chaque fois qu'une demande de contact est rédigée sur votre site, Refinery envoie un e-mail pour le signaler.
+            hint: Quand une nouvelle requête est soumise, Refinery vous envoie un e-mail d'avertissement.
+            example: "Entrez votre/vos addresse(s) e-mail comme il suit: jack@work.com, jill@office.com"
+          confirmation_email_form:
+            to: À
+            from: De
+            subject: Sujet
+            click_to_edit_subject: Cliquez ici pour modifier le sujet
+            explanation: Chaque fois qu'une demande de contact est rédigée sur votre site, Refinery envoie un e-mail pour le signaler.
+            below_edit_email_sent: Ci-dessous vous pouvez modifier l'e-mail qui sera envoyé.
+            the_customer_making_registration: Le client à l'origine de la requête
+            message: Message
+            note: "Note: Utilisez %name% à l'endroit où vous souhaitez voir apparaître le nom du client dans l'e-mail"
+      mailer:
+        notification:
+          greeting: Bonjour
+          you_recieved_new_registration: Vous avez reçu une nouvelle requête sur votre site.
+          registration_starts: --- Début des requêtes ---
+          registration_ends: --- Fin des requêtes ---
+          from: De
+          email: E-mail
+          phone: Téléphone
+          message: Message
+          closing_line: Cordialement
+          ps_html: P.S. Toutes les requêtes sont stockées dans la section 'Requêtes' afin que vous puissiez les consulter ultérieurement.
+  activerecord:
+    models:
+      registration: Registration
+    attributes:
+      registration:
+        full_name: Full name
+        email_address: Email address
+        phone_number: Phone number
+        ussa_number: Ussa number
+        fis_number: Fis number
+        street_address: Street address
+        city: City
+        state: State
+        zip: Zip
+        athlete_previous_sponsorship_level: Athlete previous sponsorship level
+        athlete_previous_sponsorship_brand: Athlete previous sponsorship brand
+        athlete_previous_sponsorship_brand_other: Athlete previous sponsorship brand other
+        athlete_team_club_name: Athlete team club name
+        athlete_age_group: Athlete age group
+        athlete_coach_name: Athlete coach name
+        athlete_preferred_race_center: Athlete preferred race center
+        coach_team_club_name: Coach team club name
+        coach_position: Coach position
+        coach_preferred_race_center: Coach preferred race center

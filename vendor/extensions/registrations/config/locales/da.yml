@@ -1,0 +1,76 @@
+da:
+  refinery:
+    plugins:
+      registrations:
+        title: Registrations
+    registrations:
+      registrations:
+        new:
+          header_message: "Der er et mindre problem"
+          message: "Følgende skal rettes:"
+          send: Send besked
+          privacy_policy: "Vi værner om dine personlige oplysninger"
+      admin:
+        registrations:
+          registration:
+            read_registration: Læs henvendelse
+            delete_registration: "Er du sikker på du vil slette denne henvendelse fra '%{name}'?"
+          index:
+            no_registrations: Du har endnu ikke modtaget nogen henvendelser.
+          show:
+            details: Detaljer
+            click_to_email: Send en e-mail til adressen
+            status: Status
+            open: "Åben"
+            closed: Lukket
+            age: Tid siden modtagelse
+            actions: Handlinger
+            back_to_all_registrations: Tilbage til alle henvendelser
+            registration: Registration
+          submenu:
+            update_notified: Opdatér, hvem der får besked
+            edit_confirmation_email: Redigér e-mailbekræftelse
+        settings:
+          update:
+            updated: "'%{setting}' er opdateret."
+          notification_recipients_form:
+            registration_settings_value_name: Send besked til
+            explanation: "Hver gang kontaktformularen benyttes, sender Refinery en e-mail med besked om, at der er modtaget en ny henvendelse"
+            hint: "Indtast en e-mail-adresse ovenfor. Skal beskeden sendes til mere end en person, så indtast flere adresser adskilt med kommaer."
+            example: "Fx mig@domæne.dk, ven@hotmail.com, kollega@arbejde.dk"
+          confirmation_email_form:
+            to: Til
+            from: Fra
+            subject: Emne
+            click_to_edit_subject: Klik her for at redigere emnet
+            explanation: "Hver gang kontaktformularen benyttes, sender Refinery en e-mail til den person, der udfyldte formularen, for at bekræfte henvendelsen."
+            below_edit_email_sent: Nedenfor kan du redigere e-mailen, der sendes ud.
+            the_customer_making_registration: Kunden, der har henvendt sig
+            message: Besked
+            note: "Bemærk: Anbring teksten %name%, der hvor du vil have kundens navn skal være i e-mailen"
+          subject_form:
+            subject_value_name: Emne
+  activerecord:
+    models:
+      registration: Registration
+    attributes:
+      registration:
+        full_name: Full name
+        email_address: Email address
+        phone_number: Phone number
+        ussa_number: Ussa number
+        fis_number: Fis number
+        street_address: Street address
+        city: City
+        state: State
+        zip: Zip
+        athlete_previous_sponsorship_level: Athlete previous sponsorship level
+        athlete_previous_sponsorship_brand: Athlete previous sponsorship brand
+        athlete_previous_sponsorship_brand_other: Athlete previous sponsorship brand other
+        athlete_team_club_name: Athlete team club name
+        athlete_age_group: Athlete age group
+        athlete_coach_name: Athlete coach name
+        athlete_preferred_race_center: Athlete preferred race center
+        coach_team_club_name: Coach team club name
+        coach_position: Coach position
+        coach_preferred_race_center: Coach preferred race center

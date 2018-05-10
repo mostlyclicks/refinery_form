@@ -1,0 +1,94 @@
+nl:
+  refinery:
+    plugins:
+      registrations:
+        title: Registrations
+        description: Contactformulier en beheer van registrations
+    registrations:
+      registrations:
+        new:
+          send: Bericht verzenden
+          privacy_policy: Wij respecteren uw privacy
+      admin:
+        registrations:
+          registration:
+            delete_registration: Deze registration definitief verwijderen
+            read_registration: Lees de registration
+            said: zei
+            mark_as_spam: Als spam markeren
+            mark_as_ham: Naar de inbox verplaatsen
+          submenu:
+            inbox: Inbox
+            spam: Spam
+            update_notified: Wijzigen wie op de hoogte wordt gesteld
+            edit_confirmation_email: Bevestigings-e-mail bewerken
+          index:
+            no_registrations: U heeft nog geen registrations ontvangen.
+          spam:
+            no_spam: Hoera! U heeft geen spam.
+          show:
+            details: Details
+            age: Leeftijd
+            actions: Acties
+            back_to_all_registrations: Terug naar alle registrations
+            spam: Spam
+            spam_yes: 'ja'
+            registration: Registration
+            to: Aan
+            from: Van
+            click_to_email: Klik hier om een e-mail te sturen naar dit adres
+            phone: Telefoonnummer
+            date: Datum
+            message: Bericht
+        settings:
+          notification_recipients_form:
+            registration_settings_value_name: Stuur notificaties naar
+            explanation: "Telkens wanneer iemand het contactformulier invult op uw website, stuurt Refinery een bevestiging naar de verzender."
+            hint: "Wilt u naar meerdere adressen notificaties sturen? Vul dan meerdere e-mailadressen in gescheiden door komma's"
+            example: "Bijvoorbeeld: jan@werk.nl, els@kantoor.nl"
+          confirmation_email_form:
+            to: Aan
+            from: Van
+            subject: Onderwerp
+            click_to_edit_subject: Klik hier om het onderwerp bewerken
+            explanation: "Telkens wanneer iemand het contactformulier invult op uw website, stuurt Refinery een bevestiging naar de verzender."
+            below_edit_email_sent: Hieronder kunt u de email die verzonden wordt bewerken.
+            the_customer_making_registration: De persoon die de registration heeft ingezonden
+            message: Bericht
+            note: "N.B.: plaats de tekst %name% overal in de email waar u de naam van de klant persoon wilt invoegen"
+      mailer:
+        notification:
+          greeting: Hallo
+          you_recieved_new_registration: U hebt een nieuwe registration ontvangen via de website.
+          registration_starts: --- begin van de registration ---
+          registration_ends: --- einde van de registration ---
+          from: Van
+          email: E-mail
+          phone: Telefoon
+          message: Bericht
+          closing_line: Met vriendelijke groet,
+          ps_html: P.S. Alle registrations worden opgeslagen in de sectie Registrations van Refinery.
+  activerecord:
+    models:
+      registration: Registration
+    attributes:
+      registration:
+        full_name: Full name
+        email_address: Email address
+        phone_number: Phone number
+        ussa_number: Ussa number
+        fis_number: Fis number
+        street_address: Street address
+        city: City
+        state: State
+        zip: Zip
+        athlete_previous_sponsorship_level: Athlete previous sponsorship level
+        athlete_previous_sponsorship_brand: Athlete previous sponsorship brand
+        athlete_previous_sponsorship_brand_other: Athlete previous sponsorship brand other
+        athlete_team_club_name: Athlete team club name
+        athlete_age_group: Athlete age group
+        athlete_coach_name: Athlete coach name
+        athlete_preferred_race_center: Athlete preferred race center
+        coach_team_club_name: Coach team club name
+        coach_position: Coach position
+        coach_preferred_race_center: Coach preferred race center

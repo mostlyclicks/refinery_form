@@ -1,0 +1,94 @@
+cs:
+  refinery:
+    plugins:
+      registrations:
+        title: Registrations
+        description: Poskytuje kontaktní formulář a zaznamenáva registrations
+    registrations:
+      registrations:
+        new:
+          send: Odeslat zprávu
+          privacy_policy: Chráníme vaše soukromí
+      admin:
+        registrations:
+          registration:
+            delete_registration: Trvale odstranit registration
+            read_registration: Přečíst registration
+            said: řekl
+            mark_as_spam: Označit jako spam
+            mark_as_ham: Označit jako přečtené
+          submenu:
+            inbox: Inbox
+            spam: Spam
+            update_notified: Upravit seznam notifikovaných
+            edit_confirmation_email: Upravit potvrzovací e-mail
+          index:
+            no_registrations: Zatím jste neobdrželi žádné registrations.
+          spam:
+            no_spam: Hurá! Nemáte žádný spam.
+          show:
+            details: Podrobnosti
+            age: Věk
+            actions: Akce
+            back_to_all_registrations: Zpět na všechny registrations
+            spam: Spam
+            spam_yes: 'ano'
+            registration: Registration
+            to: Komu
+            from: Od
+            click_to_email: Klikněte pro odeslání této adresy e-mailem
+            phone: Telefon
+            date: Datum
+            message: Zpráva
+        settings:
+          notification_recipients_form:
+            registration_settings_value_name: Zaslat upozornění pro
+            explanation: Pokaždé, když Vás někdo kontaktuje přes vaše webové stránky, Refinery odešle e-mail s upozorněním na nový registration.
+            hint: Když je odeslán nový registration, Refinery pošle upozornení na Váš e-mail.
+            example: "Zadejte e-mailové adresy jako: jack@work.com, jill@office.com"
+          confirmation_email_form:
+            to: Komu
+            from: Od
+            subject: Předmet
+            click_to_edit_subject: Klikněte zde pro editaci předmetu
+            explanation: Když Vás někdo kontaktuje přes vaše webové stránky, Refinery odešle e-mail s potvrzením o přijetí odesílateli registration.
+            below_edit_email_sent: Níže můžete upravit e-mail, který je odeslán.
+            the_customer_making_registration: Klient delá registration
+            message: Zpráva
+            note: "Poznámka: umístěte text %name%, pro určení pozice jména klienta v e-maile"
+      mailer:
+        notification:
+          greeting: Hi there
+          you_recieved_new_registration: You just received a new registration on your website.
+          registration_starts: --- registration starts ---
+          registration_ends: --- registration ends ---
+          from: Od
+          email: E-mail
+          phone: Telefon
+          message: Zpráva
+          closing_line: S pozdravem
+          ps_html: P.S. Všechny vaše registrations jsou uloženy pod záložkou "Registrations" v Refinery, pokud by jste je chtěli zobrazit pozdeji.
+  activerecord:
+    models:
+      registration: Registration
+    attributes:
+      registration:
+        full_name: Full name
+        email_address: Email address
+        phone_number: Phone number
+        ussa_number: Ussa number
+        fis_number: Fis number
+        street_address: Street address
+        city: City
+        state: State
+        zip: Zip
+        athlete_previous_sponsorship_level: Athlete previous sponsorship level
+        athlete_previous_sponsorship_brand: Athlete previous sponsorship brand
+        athlete_previous_sponsorship_brand_other: Athlete previous sponsorship brand other
+        athlete_team_club_name: Athlete team club name
+        athlete_age_group: Athlete age group
+        athlete_coach_name: Athlete coach name
+        athlete_preferred_race_center: Athlete preferred race center
+        coach_team_club_name: Coach team club name
+        coach_position: Coach position
+        coach_preferred_race_center: Coach preferred race center

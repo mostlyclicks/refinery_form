@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180510175042) do
+ActiveRecord::Schema.define(version: 20180510180039) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -133,6 +133,31 @@ ActiveRecord::Schema.define(version: 20180510175042) do
     t.index ["rgt"], name: "index_refinery_pages_on_rgt"
   end
 
+  create_table "refinery_registrations", id: :serial, force: :cascade do |t|
+    t.string "full_name"
+    t.string "email_address"
+    t.string "phone_number"
+    t.string "ussa_number"
+    t.string "fis_number"
+    t.string "street_address"
+    t.string "city"
+    t.string "state"
+    t.string "zip"
+    t.string "athlete_previous_sponsorship_level"
+    t.string "athlete_previous_sponsorship_brand"
+    t.string "athlete_previous_sponsorship_brand_other"
+    t.string "athlete_team_club_name"
+    t.string "athlete_age_group"
+    t.string "athlete_coach_name"
+    t.string "athlete_preferred_race_center"
+    t.string "coach_team_club_name"
+    t.string "coach_position"
+    t.string "coach_preferred_race_center"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["id"], name: "index_refinery_registrations_on_id"
+  end
+
   create_table "refinery_resource_translations", force: :cascade do |t|
     t.integer "refinery_resource_id", null: false
     t.string "locale", null: false
@@ -151,6 +176,20 @@ ActiveRecord::Schema.define(version: 20180510175042) do
     t.string "file_ext"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "refinery_settings", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.text "value"
+    t.boolean "destroyable", default: true
+    t.string "scoping"
+    t.boolean "restricted", default: false
+    t.string "form_value_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string "slug"
+    t.string "title"
+    t.index ["name"], name: "index_refinery_settings_on_name"
   end
 
   create_table "seo_meta", id: :serial, force: :cascade do |t|

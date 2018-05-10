@@ -1,0 +1,32 @@
+<%= t('.greeting') %>,<br/>
+<br/>
+<%= t('.you_recieved_new_registration') %><br/>
+<br/>
+<%= t('.registration_starts') %><br/>
+<br/>
+<%= t('.full_name', :default => t('activerecord.attributes.registration.full_name')) %>: <%= @registration.full_name %><br/>
+<%= t('.email_address', :default => t('activerecord.attributes.registration.email_address')) %>: <%= @registration.email_address %><br/>
+<%= t('.phone_number', :default => t('activerecord.attributes.registration.phone_number')) %>: <%= @registration.phone_number %><br/>
+<%= t('.ussa_number', :default => t('activerecord.attributes.registration.ussa_number')) %>: <%= @registration.ussa_number %><br/>
+<%= t('.fis_number', :default => t('activerecord.attributes.registration.fis_number')) %>: <%= @registration.fis_number %><br/>
+<%= t('.street_address', :default => t('activerecord.attributes.registration.street_address')) %>: <%= @registration.street_address %><br/>
+<%= t('.city', :default => t('activerecord.attributes.registration.city')) %>: <%= @registration.city %><br/>
+<%= t('.state', :default => t('activerecord.attributes.registration.state')) %>: <%= @registration.state %><br/>
+<%= t('.zip', :default => t('activerecord.attributes.registration.zip')) %>: <%= @registration.zip %><br/>
+<%= t('.athlete_previous_sponsorship_level', :default => t('activerecord.attributes.registration.athlete_previous_sponsorship_level')) %>: <%= @registration.athlete_previous_sponsorship_level %><br/>
+<%= t('.athlete_previous_sponsorship_brand', :default => t('activerecord.attributes.registration.athlete_previous_sponsorship_brand')) %>: <%= @registration.athlete_previous_sponsorship_brand %><br/>
+<%= t('.athlete_previous_sponsorship_brand_other', :default => t('activerecord.attributes.registration.athlete_previous_sponsorship_brand_other')) %>: <%= @registration.athlete_previous_sponsorship_brand_other %><br/>
+<%= t('.athlete_team_club_name', :default => t('activerecord.attributes.registration.athlete_team_club_name')) %>: <%= @registration.athlete_team_club_name %><br/>
+<%= t('.athlete_age_group', :default => t('activerecord.attributes.registration.athlete_age_group')) %>: <%= @registration.athlete_age_group %><br/>
+<%= t('.athlete_coach_name', :default => t('activerecord.attributes.registration.athlete_coach_name')) %>: <%= @registration.athlete_coach_name %><br/>
+<%= t('.athlete_preferred_race_center', :default => t('activerecord.attributes.registration.athlete_preferred_race_center')) %>: <%= @registration.athlete_preferred_race_center %><br/>
+<%= t('.coach_team_club_name', :default => t('activerecord.attributes.registration.coach_team_club_name')) %>: <%= @registration.coach_team_club_name %><br/>
+<%= t('.coach_position', :default => t('activerecord.attributes.registration.coach_position')) %>: <%= @registration.coach_position %><br/>
+<%= t('.coach_preferred_race_center', :default => t('activerecord.attributes.registration.coach_preferred_race_center')) %>: <%= @registration.coach_preferred_race_center %><br/>
+<br/>
+<%= t('.registration_ends') %><br/>
+<br/>
+<%= t('.closing_line') %>,<br/>
+<%= Refinery::Core.site_name %><br/>
+<br/>
+<%= t('.ps_html') %>

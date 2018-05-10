@@ -1,0 +1,77 @@
+sl:
+  refinery:
+    plugins:
+      registrations:
+        title: Registrations
+    registrations:
+      registrations:
+        new:
+          header_message: "Ups prišlo je do majhnega problema"
+          message: "Prosimo odpravite sledeče napake:"
+          send: Pošlji sporočilo
+          privacy_policy: "Cenimo vašo zasebnost"
+      admin:
+        registrations:
+          registration:
+            said: pravi
+            read_registration: Preberi povpraševanje
+            delete_registration: "Ali ste prepričani da želite odstraniti povpraševanje od '%{name}'?"
+          index:
+            no_registrations: Trenutno še ni nobenega povpraševanja.
+          submenu:
+            update_notified: Uredi prejemnike obvestila
+            edit_confirmation_email: Uredni potrditveni email
+          show:
+            details: Podrobnosti
+            click_to_email: Pošlji email sporočilo
+            status: Status
+            open: Odprto
+            closed: Zaprto
+            age: Starost
+            actions: Možnosti
+            back_to_all_registrations: Nazaj na vsa povpraševanja
+            registration: Registration
+        settings:
+          update:
+            updated: "'%{setting}' je bila uspešno posodobljena."
+          notification_recipients_form:
+            registration_settings_value_name: Pošlji obvestilo na
+            explanation: "Vedno ko vas nekdo kontaktira na vaši spletni strani, vam Refinery pošlje email obvestilo o novem povpraševanju."
+            hint: "V zgornje polje vnesite email naslov. Želite da obvestila prejme več oseb? Vnesite več email naslovov ločenih z vejicami."
+            example: "Primer: jaz@domena.com, prijatelj@msn.com, sodelavec@work.com"
+          confirmation_email_form:
+            to: Za
+            from: Od
+            subject: Zadeva
+            click_to_edit_subject: Uredi zadevo
+            explanation: "Vedno ko vas nekdo kontaktira na vaši spletni strani mu Refinery pošlje email obvestilo o prejetem povpraševanju."
+            below_edit_email_sent: Spodaj lahko uredite vsebino email sporočila.
+            the_customer_making_registration: Stranka, ki je poslala povpraševanje
+            message: Sporočilo
+            note: "Opomba: vstavite tekst %name% kjer želite, da se pojavi ime stranke v email sporočilu."
+          subject_form:
+            subject_value_name: Zadeva
+  activerecord:
+    models:
+      registration: Registration
+    attributes:
+      registration:
+        full_name: Full name
+        email_address: Email address
+        phone_number: Phone number
+        ussa_number: Ussa number
+        fis_number: Fis number
+        street_address: Street address
+        city: City
+        state: State
+        zip: Zip
+        athlete_previous_sponsorship_level: Athlete previous sponsorship level
+        athlete_previous_sponsorship_brand: Athlete previous sponsorship brand
+        athlete_previous_sponsorship_brand_other: Athlete previous sponsorship brand other
+        athlete_team_club_name: Athlete team club name
+        athlete_age_group: Athlete age group
+        athlete_coach_name: Athlete coach name
+        athlete_preferred_race_center: Athlete preferred race center
+        coach_team_club_name: Coach team club name
+        coach_position: Coach position
+        coach_preferred_race_center: Coach preferred race center
