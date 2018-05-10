@@ -52,3 +52,17 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+gem "refinerycms-core"
+gem "refinerycms-images"
+gem "refinerycms-pages"
+gem "refinerycms-resources"
+
+# Add support for refinerycms-acts-as-indexed
+gem 'refinerycms-acts-as-indexed', ['~> 3.0', '>= 3.0.0']
+
+# Add the default visual editor, for now.
+gem 'refinerycms-wymeditor', ['~> 2.0', '>= 2.0.0']
+
+gem 'refinerycms-authentication-devise', '~> 2.0.0'
